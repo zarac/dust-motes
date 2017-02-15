@@ -40,7 +40,8 @@
       return body(chunk, context.push({
         $key: key,
         $value: value,
-        $type: typeof value
+        $type: typeof value,
+        $parent: context.stack.head
       }));
     }
 
